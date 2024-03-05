@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <title>Body Fat Estimator</title>
+</head>
+
+<body style="overflow: scroll;">
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <div class="container">
+                            {% if prediction %}
+                                <p style="font-size: 48px;">Estimated Body Fat is {{ prediction }}%</p>
+                            {% endif %}
+                        </div>
+                        <h3>Body Fat Estimator</h3>
+                        <p>Fill in the details below below.</p>
+                        <form class="requires-validation" novalidate action="/" method="post"
+                            enctype="multipart/form-data">
+                            <div class="col-md-12">
+                                
+                                <input type="text" class="form-control" id="Density" name="Density"
+                                    aria-describedby="emailHelp"
+                                    placeholder="if unknown, kindly input average density that is 1.0555">
+                                    <label for="exampleFormControlInput1">Density (Underwater weighing)</label>
+                                    
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Age" name="Age"
+                                aria-describedby="basic-addon3" placeholder="">
+                                <label for="exampleFormControlInput1">Age (years)</label>
+                                    
+                            </div>
+
+                            <!-- <div class="col-md-12">
+                                <label for="exampleFormControlInput1">Age</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
+                            </div> -->
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Weight" name="Weight"
+                                aria-describedby="emailHelp" placeholder=" ">
+                                <label for="exampleFormControlInput1">Weight (lbs)</label>
+                                    
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Height" name="Height"
+                                aria-describedby="emailHelp" placeholder=" ">
+                                <label for="exampleFormControlInput1">Height (inches)</label>
+                                    
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Neck" name="Neck"
+                                aria-describedby="emailHelp" placeholder=" ">
+                                <label for="exampleFormControlInput1">Neck Circumference (cm)</label>
+                                    
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Chest" name="Chest"
+                                aria-describedby="emailHelp" placeholder=" ">
+                                <label for="exampleFormControlInput1">Chest Circumference (cm)</label>
+                                
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Abdomen" name="Abdomen"
+                                aria-describedby="emailHelp" placeholder=" ">
+                                <label for="exampleFormControlInput1">Abdomen Circumference (cm)</label>
+                                    
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Hip" name="Hip" aria-describedby="emailHelp"
+                                placeholder=" ">
+                                <label for="exampleFormControlInput1">Hip Circumference (cm)</label>
+                                    
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="Thigh" name="Thigh"
+                                aria-describedby="emailHelp" placeholder=" ">
+                                <label for="exampleFormControlInput1">Thigh Circumference (cm)</label>
+                                    
+                            </div>
+                    
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="Knee" name="Knee" aria-describedby="emailHelp"
+                        placeholder=" ">
+                        <label for="exampleFormControlInput1">Knee Circumference (cm)</label>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="Ankle" name="Ankle" aria-describedby="emailHelp"
+                        placeholder=" ">
+                        <label for="exampleFormControlInput1">Ankle Circumference (cm)</label>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="Biceps" name="Biceps" aria-describedby="emailHelp"
+                        placeholder=" ">
+                        <label for="exampleFormControlInput1">Biceps Circumference (cm)</label>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="Forearm" name="Forearm" aria-describedby="emailHelp"
+                        placeholder=" ">
+                        <label for="exampleFormControlInput1">Forearm Circumference (cm)</label>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="Wrist" name="Wrist" aria-describedby="emailHelp"
+                        placeholder=" ">
+                        <label for="exampleFormControlInput1">Wrist Circumference (cm)</label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                    <br><br>
+                    
+                    <br><br>
+                    <div style="margin-left: 20px;">
+                        <p>Mady By: Khan Faisal</p>
+                        <a href="https://khanfaisal.netlify.app" class="nav-link px-2 text-muted">Portfolio</a>
+                        ><a href="https://www.linkedin.com/in/khanfaisal79960"
+                            class="nav-link px-2 text-muted">Linkedin</a>
+                        ><a href="https://github.com/khanfaisal79960" class="nav-link px-2 text-muted">Github</a>
+                        ><a href="https://medium.com/@khanfaisal79960" class="nav-link px-2 text-muted">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
