@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://body-fat-estimator-9v9z.onrender.com/](https://body-fat-estimator-9v9z.onrender.com/)
+[https://body-fat-estimator.replit.app](https://body-fat-estimator.replit.app)
 
 <h2>Project Screenshots:</h2>
 
