@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/khanfaisal79960/body-fat-estimator/image?description=1&amp;descriptionEditable=Revolutionizing%20Health%20with%20an%20Innovative%20Body%20Fat%20Estimator&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Light" alt="project-image"></p>
 
-<p id="description">The Body Fat Estimator project is a cutting-edge initiative aimed at revolutionizing health and fitness assessments. Leveraging advanced technologies and algorithms this innovative tool provides a precise and convenient way to estimate body fat percentage. By seamlessly integrating with common health monitoring devices and utilizing user-friendly interfaces the project empowers individuals to make informed decisions about their fitness goals. Whether you're an athlete health enthusiast or someone on a wellness journey this project offers an accessible and accurate solution for monitoring and optimizing your body composition. Embrace the future of health assessment with the Body Fat Estimator project.</p>
+<p id="description">The Body Fat Estimator project aims to develop a machine learning model that accurately predicts body fat percentage based on various physical measurements. By utilizing data collected from individuals with known body fat percentages, the model provides an estimation of body fat percentage, which can be valuable for health assessment, fitness tracking, and medical research.</p>
 
 <h2>🚀 Demo</h2>
 
